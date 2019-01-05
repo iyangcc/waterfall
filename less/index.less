@@ -1,0 +1,358 @@
+body,html {
+  width: 100%;
+  height: 100%;
+}
+.bg-color {
+  background: #393D49;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+    h1 {
+      color: #f0f0f0;
+      font-size: 24px;
+      padding: 20px 0;
+    }
+    .wrapper {
+      .loading {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  .email {
+    position: absolute;
+    top: 105px;
+    right: -60px;
+    text-align: center;
+    cursor: pointer;
+    .count {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 13px 13px 13px 0;
+      top: -20px;
+      right: 0px;
+      background: #f00;
+      color: #fff;
+      line-height: 25px;
+      display: none;
+    }
+    .icon_email {
+      color: #fff;
+      font-size: 45px;
+      line-height: 40px;
+    }
+  }
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+}
+.e-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -200px;
+  background: #34465d;
+  border: 1px solid #232d46;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #111;
+  overflow: hidden;
+    .hd {
+      color: #FFFFFF;
+      font-size: 24px;
+      text-align: center;
+      line-height: 40px;
+      background: #2f4056;
+      border-bottom: 1px solid #283950;
+      cursor: move;
+      span {
+          position: absolute;
+          padding-bottom: 0px;
+          top: 0px;
+          right: 0px;
+          height: 40px;
+          font-size: 60px;
+          line-height: 64px;
+          overflow: hidden;
+          }
+      s {
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 1px;
+        right: 1px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+    }
+    .bd {
+      .small-gift, .big-gift {
+        height: 80px;
+        margin-top: 10px;
+        padding: 0 40px;
+        position: relative;
+          i {
+            font-size: 26px;
+            line-height: 80px;
+            color: rgb(205, 33, 33);
+          }
+          span {
+            position: absolute;
+            top: 50%;
+            right: 120px;
+            width: 60px;
+            height: 30px;
+            color: #f0f0f0;
+            font-size: 14px;
+            line-height: 30px;
+            margin-top: -15px;
+            text-align: center;
+            border-radius: 20px;
+            background: rgba(247,212,10,.7);
+          }
+      }
+      #bignum{
+        background: orangered;
+      }
+    }
+}
+
+/*模板加载*/
+.wrapper {
+  padding: 50px;
+  img, video {
+    display: block;
+    width: 100%;
+  }
+  .items {
+    position: relative;
+    .item {
+      width: 228px;
+      color: #f0f0f0;
+      position: absolute;
+        p {
+          text-align: left;
+        }
+        p:nth-child(2) {
+          margin-top: 5px;
+        }
+    }
+  }
+}
+
+/*点击弹出层*/
+.ask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  display: none;
+    .box  {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 800px;
+      height: 800px;
+      margin-top: -400px;
+      margin-left: -400px;
+      //background: #fff;
+        img {
+          position: absolute;
+          width: 60%;
+          left: 50%;
+          top: 50%;
+          margin-left: -30%;
+        }
+        video {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          margin-top: -225px;
+          display: none;
+        }
+        .time {
+          position: absolute;
+          top: 0;
+          right: -100px;
+          color: #fff;
+          font-size: 26px;
+            i {
+              color: orange;
+              padding: 0 5px 0 10px;
+            }
+        }
+    }
+    .exit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      font-size: 28px;
+      text-align: center;
+      line-height: 50px;
+      color: #f7f7f7;
+      cursor: pointer;
+    }
+}
+
+.suere {
+  display: inline-block;
+  color: #fff;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  background: rgba(46, 113, 159, 0.9);
+  cursor: pointer;
+  &:hover {
+    background: orange;
+  }
+}
+
+.prompt_7 {
+  display: none;
+  .e-box {
+    box-shadow: none;
+      .bd {
+          .content {
+            width: 100%;
+            color: orange;
+            font-size: 30px;
+            padding-right: 20px;
+            text-align: center;
+            line-height: 150px;
+              i {
+                font-size: 60px;
+                vertical-align: middle;
+              }
+          }
+          input:nth-child(n+1) {
+            display: inline-block;
+            color: #fff;
+            width: 80px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 80px;
+            background: rgba(46, 113, 159, 0.9);
+            cursor: pointer;
+              &:hover {
+                background: orange;
+              }
+          }
+      }
+  }
+}
+
+.prompt_15 {
+  display: none;
+  .e-box {
+    box-shadow: none;
+    text-align: center;
+    .bd {
+      .content {
+        width: 100%;
+        color: orange;
+        font-size: 24px;
+        line-height: 150px;
+        padding-right: 20px;
+        i {
+          font-size: 60px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.mask60 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  display: none;
+  .prompt_60 {
+    .e-box {
+      box-shadow: none;
+      text-align: center;
+      .hd {
+        cursor: default;
+      }
+      .bd {
+        .content {
+          width: 100%;
+          color: orange;
+          font-size: 24px;
+          line-height: 150px;
+          padding-right: 20px;
+          i {
+            font-size: 60px;
+            vertical-align: middle;
+          }
+          s {
+            color: #fff;
+            padding: 0 10px;
+          }
+        }
+        .success {
+          display: none;
+          width: 100%;
+          color: orangered;
+          font-size: 24px;
+          line-height: 150px;
+          padding-right: 20px;
+            i {
+              font-size: 60px;
+              vertical-align: middle;
+              color: #ff0000;
+            }
+        }
+      }
+    }
+  }
+}
+
+/*返回顶部*/
+.retop {
+  position: fixed;
+  bottom: 155px;
+  right: 0;
+  height: 50px;
+  text-align: center;
+  display: none;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      width: 50px;
+      color: #FFFFFF;
+      font: 700 28px/50px "consolas";
+      background: #979797;
+      cursor: pointer;
+    }
+    .tp {
+      right: 50px;
+      width: 80px;
+      height: 50px;
+      color: #cd2121;
+      font: 400 16px/50px "simsun";
+      background: #bdbdbd;
+      display: none;
+    }
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上传gif图片处理成jpg</title>
+    <link rel="stylesheet" href="css/upload.css"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="content">
+        上传GIF图片处理成JPG
+    </div>
+    <div class="serch">
+        <form action="php/gif.php" method="post" enctype="multipart/form-data" name="form1">
+        <input type="file" name="file" id="file" onChange="document.form1.path.value=this.value">
+        <input name="path" readonly><input type="button" value="浏览" onclick="document.form1.file.click()">
+        <input type="text" placeholder="文件重命名" id="filename" name="rename"><input type="submit" value="提交" id="yes"/>
+        </form>
+    </div>
+</div>
+<script src="js/upload.js"></script>
+</body>
+</html>

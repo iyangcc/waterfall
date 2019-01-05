@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  width: 600px;
+  margin: 200px auto;
+}
+.content {
+  width: 100%;
+  text-align: center;
+  font: 700 30px/200% "microsoft yahei";
+}
+.word {
+  padding-left: 10px;
+}
+.serch {
+  width: 100%;
+  height: 50px;
+  vertical-align: middle;
+}
+.serch input[type="file"] {
+  display: none;
+}
+.serch input[name="path"], input[type="text"] {
+  width: 486px;
+  height: 48px;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid #096;
+  padding: 0 5px 0;
+  box-shadow: 3px 3px 4px 0px #cccccc;
+  vertical-align: top;
+}
+.serch input[type="text"],input[type="submit"] {
+  margin-top: 5px;
+}
+.serch input[type="button"],
+.serch input[type="submit"] {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font: 400 24px/50px "consolas";
+  background: #096;
+  box-shadow: 3px 3px 4px 0px #cccccc;
+  cursor: pointer;
+}
+.serch input[type="button"]:hover,
+.serch input[type="submit"]:hover {
+  background: #008451;
+}

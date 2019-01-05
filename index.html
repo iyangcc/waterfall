@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <!--引入外部样式-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--引入自定义jquery-->
+    <script src="js/jquery.1.0.1.js"></script>
+    <!--引入jQuery-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--引入自定义的瀑布流插件-->
+    <script src="js/jquery-waterfall.js"></script>
+    <!--引入template-->
+    <script src="js/template-native.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <div class="bg-color">
+        <div class="container w">
+            <h1>瀑布流 展示页面</h1>
+            <div class="wrapper">
+                <!--items 作为 瀑布流的容器  瀑布流中的 元素的 宽度 是固定的-->
+                <div class="items"></div>
+                <p class="loading" >点击加载更多...</p>
+            </div>
+            <!--邮箱统计数据-->
+            <div class="email">
+                <div class="count" id="tips"></div>
+                <div class="icon_email iconfont">&#xe661;</div>
+            </div>
+        </div>
+
+        <!--邮箱信息详情start-->
+        <div class="mask">
+            <div class="e-box">
+                <div class="hd">
+                    <i>礼品统计</i>
+                    <span class="iconfont">&#xe61e;</span>
+                    <s class="close"></s>
+                </div>
+                <div class="bd">
+                    <div class="small-gift"><i class="iconfont">&#xe60d; 小礼物：</i><span id="samllnum">0</span></div>
+                    <div class="big-gift"><i class="iconfont">&#xe67a; 大礼物：</i><span id="bignum">0</span></div>
+                </div>
+            </div>
+        </div>
+        <!--邮箱信息详情end-->
+    </div>
+
+    <!--弹出层start-->
+    <div class="ask" id="reveal">
+        <div class="exit iconfont" onclick="Out()">&#xe611;</div>
+        <div class="box">
+            <img src="images/img/banner3/1.jpg" id="fullImg"/>
+            <video src="video/3.mp4" id="fullVideo"></video>
+            <div class="time iconfont">&#xe60d;<i>15</i>s</div>
+        </div>
+        <!--7s信息层start-->
+        <div class="prompt_7">
+            <div class="e-box">
+                <div class="hd">
+                    <i>信息</i>
+                </div>
+                <div class="bd pro">
+                    <div class="content"><i class="iconfont">&#xe738;</i> 是否领取7s小礼物？</div>
+                    <input type="button" value="领取"/>
+                    <input type="button" value="否"/>
+                </div>
+            </div>
+        </div>
+        <!--7s信息层end-->
+        <!--15s信息层start-->
+        <div class="prompt_15">
+            <div class="e-box">
+                <div class="hd">
+                    <i>信息</i>
+                </div>
+                <div class="bd pro">
+                    <div class="content small"><i class="iconfont">&#xe60d; </i> 恭喜获得一份小礼~</div>
+                    <div class="content big"><i class="iconfont">&#xe67a; </i> 恭喜获得一份大礼~</div>
+                    <input type="button" class="suere" value="确定"/>
+                </div>
+            </div>
+        </div>
+        <!--15s信息层end-->
+    </div>
+    <!--弹出层end-->
+
+    <!--60s提示信息start-->
+    <div class="mask60" id="prom">
+        <div class="prompt_60">
+            <div class="e-box">
+                <div class="hd">
+                    <i>信息</i>
+                </div>
+                <div class="bd pro">
+                    <div class="content"><i class="iconfont">&#xe65b; </i>请<s>60</s>s后再次访问！</div>
+                    <div class="success"><i class="iconfont">&#xe608; </i>现在可以重新访问</div>
+                    <input type="button" id="suere60" class="suere" value="确定"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--60s提示信息end-->
+
+    <!--返回顶部start-->
+    <div class="retop">
+        <div class="tp">返回顶部</div><span class="iconfont">&#xe617;</span>
+    </div>
+    <!--返回顶部end-->
+
+    <!--自定义模板-->
+    <script type="text/template" id='template'>
+        <%for(var i=0;i<items.length;i++){%>
+        <div class='item'>
+            <%if(items[i].path.match(/^((?!\.mp4$).)*$/i)){%>
+            <img src="<%=items[i].path%>" onclick="loadImg()" onmouseenter="Carousel()" onmouseleave="stopCar()" <%=items[i].size %>>
+            <%}else{%>
+            <video src="<%=items[i].path%>" onclick="loadImg()" onmouseenter="startplay()" onmouseleave="endplay()" <%=items[i].size %>></video>
+            <%}%>   
+            <p>7s次数：<span class="num7">0</span></p>
+            <p>15s次数：<span class="num15">0</span></p>
+            <p>总共观看次数：<span class="sum">0</span></p>
+        </div>
+        <%}%>
+    </script>
+    <script src="js/img.js"></script>   
+    <script src="js/drag.js"></script>
+    <script src="js/countDown.js"></script>
+    <script src="js/data.js"></script>
+      
+</body>
+</html>

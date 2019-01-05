@@ -1,0 +1,109 @@
+[
+  {
+    "path" : "./images/img/banner1/1.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./images/gif/1.jpg",
+    "size" : "width=228px height=228px"  
+  },
+  {
+    "path" : "./video/1.mp4"
+  },
+  {
+    "path" : "./images/img/banner1/2.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./images/gif/2.jpg",
+    "size" : "width=228px height=166px"
+  },
+  {
+    "path" : "./video/2.mp4",
+    "size" : "width=228px height=129px"
+  },
+  {
+    "path" : "./images/img/banner1/3.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./images/gif/3.jpg",
+    "size" : "width=228px height=128px"
+  },
+  {
+    "path" : "./video/3.mp4",
+    "size" : "width=228px height=128px"
+  },
+  {
+    "path" : "./images/img/banner1/4.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./images/gif/4.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./video/4.mp4",
+    "size" : "width=228px height=167px"
+  },
+  {
+    "path" : "./images/img/banner2/1.jpg",
+    "size" : "width=228px height=160px"
+  },
+  {
+    "path" : "./images/gif/5.jpg",
+    "size" : "width=228px height=150px"
+  },
+  {
+    "path" : "./video/5.mp4",
+    "size" : "width=228px height=128px"
+  },
+  {
+    "path" : "./video/6.mp4",
+    "size" : "width=228px height=129px"
+  },
+  {
+    "path" : "./video/7.mp4",
+    "size" : "width=228px height=170px"
+  },
+  {
+    "path" : "./images/img/banner2/2.jpg",
+    "size" : "width=228px height=160px"
+  },
+  {
+    "path" : "./images/img/banner2/3.jpg",
+    "size" : "width=228px height=160px"
+  },
+  {
+    "path" : "./images/img/banner2/4.jpg",
+    "size" : "width=228px height=160px"
+  },
+  {
+    "path" : "./images/img/banner1/5.jpg",
+    "size" : "width=228px height=228px"
+  },
+  {
+    "path" : "./images/img/banner2/5.jpg",
+    "size" : "width=228px height=160px"
+  },
+  {
+    "path" : "./images/img/banner3/5.jpg",
+    "size" : "width=228px height=342px"
+  },
+  {
+    "path" : "./images/img/banner3/4.jpg",
+    "size" : "width=228px height=342px"
+  },
+  {
+    "path" : "./images/img/banner3/3.jpg",
+    "size" : "width=228px height=342px"
+  },
+  {
+    "path" : "./images/img/banner3/2.jpg",
+    "size" : "width=228px height=342px"
+  },
+  {
+    "path" : "./images/img/banner3/1.jpg",
+    "size" : "width=228px height=342px"
+  }
+]
